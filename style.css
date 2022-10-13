@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #060933;
+    font-family: 'Roboto', sans-serif;
+    color: #F0F8FF;
+}
+.info1{
+    display: grid;
+}
+
+#pfp{
+    width: 12%;
+    height: 12%;
+    --angle: 0deg;
+	border: 5px solid;
+	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+	
+	animation: 0.5s rotate linear infinite;
+    
+}
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.cursos{
+    font-size: 80%;
+}
+.habilidadesTabela{
+    border-style: solid;
+    border-color: #F0F8FF;
+}
